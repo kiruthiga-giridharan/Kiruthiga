@@ -295,11 +295,11 @@ const CareerInsights = () => {
           <div className="flex flex-col gap-4">
             <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider">Key Numbers</p>
             {[
-              { label: 'On-time Reporting Delivery', value: '100%', sub: 'Circana — 200+ accounts', color: '#06b6d4' },
+              { label: 'EMEA Client Portfolio', value: '200+', sub: 'Circana — enterprise clients', color: '#06b6d4' },
               { label: 'Data Accuracy Maintained', value: '100%', sub: 'TCS — 15+ banking releases', color: '#a855f7' },
-              { label: 'Annual Cost Savings', value: '€120K', sub: 'Estee Lauder — procurement', color: '#ec4899' },
-              { label: 'Quality Adherence Score', value: '98%', sub: 'TCS — Top Performer Award', color: '#8b5cf6' },
-              { label: 'EMEA Portfolio Managed', value: '$10M+', sub: 'Circana — EMEA region', color: '#6366f1' },
+              { label: 'Recurring Error Reduction', value: '25%', sub: 'Circana — P&L deep dives', color: '#ec4899' },
+              { label: 'Procurement Cost Cut', value: '15%', sub: 'Estee Lauder — vendor negotiations', color: '#8b5cf6' },
+              { label: 'Conversion Uplift', value: '20%+', sub: 'Estee Lauder — sales funnel', color: '#6366f1' },
             ].map((stat, i) => (
               <div
                 key={i}

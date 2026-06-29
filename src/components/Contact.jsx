@@ -106,7 +106,7 @@ const Contact = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
-            Open to Data Analyst, Business Analyst, and Operations Analyst opportunities in Dublin, Ireland.
+            Open to Commercial Analyst, Data Analyst, and Business Analyst opportunities in Dublin, Ireland.
             <br />
             <span className="inline-flex items-center gap-1.5 mt-2 text-cyan-400/80">
               <span className="w-2 h-2 rounded-full bg-cyan-400" />
@@ -139,7 +139,7 @@ const Contact = () => {
               </div>
               <div className="text-center">
                 <p className="text-sm font-semibold text-white mb-0.5">Download Resume</p>
-                <p className="text-xs text-gray-500">Kiruthiga Giridharan · Data Analyst</p>
+                <p className="text-xs text-gray-500">Kiruthiga Giridharan · Commercial Analyst</p>
               </div>
               <button
                 className="px-6 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:scale-105 active:scale-95"
@@ -213,8 +213,8 @@ const Contact = () => {
               <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">At a Glance</h4>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: 'Experience', value: '5+ Years', color: '#06b6d4' },
-                  { label: 'Current Role', value: 'Data Analyst', color: '#a855f7' },
+                  { label: 'Experience', value: '4.5+ Years', color: '#06b6d4' },
+                  { label: 'Current Role', value: 'Commercial Analyst', color: '#a855f7' },
                   { label: 'Location', value: 'Dublin 🇮🇪', color: '#6366f1' },
                   { label: 'Education', value: 'MSc · BEng', color: '#8b5cf6' },
                   { label: 'Key Tools', value: 'Python · SQL', color: '#ec4899' },
@@ -241,7 +241,7 @@ const Contact = () => {
             <span className="text-white font-semibold">Kiruthiga Giridharan</span>
           </p>
           <p className="text-gray-700 text-xs mt-1">
-            Data Analyst · Dublin, Ireland · {new Date().getFullYear()}
+            Commercial Analyst · Dublin, Ireland · {new Date().getFullYear()}
           </p>
         </div>
       </div>

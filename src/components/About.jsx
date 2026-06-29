@@ -27,7 +27,7 @@ const timelineEvents = [
   {
     year: '2020 – 2022',
     type: 'work',
-    title: 'Data & Systems Analyst',
+    title: 'Systems Analyst',
     subtitle: 'Tata Consultancy Services · Chennai, India',
     detail: '100+ SQL queries · 100% data accuracy · 15+ banking releases · Top Performer FY2021',
     color: '#8b5cf6',
@@ -47,9 +47,9 @@ const timelineEvents = [
   {
     year: '2022 – 2024',
     type: 'work',
-    title: 'Business & Data Analyst',
+    title: 'Commercial Analyst',
     subtitle: 'Estee Lauder Companies · Dublin, Ireland',
-    detail: '20%+ conversion uplift · 30% faster reporting · EUR 120K cost savings · 8 retail locations',
+    detail: '20%+ conversion uplift · 15% procurement cost cut · 5+ product launches/yr',
     color: '#ec4899',
     icon: '💼',
     delay: 450,
@@ -57,9 +57,9 @@ const timelineEvents = [
   {
     year: '2024 – Present',
     type: 'work',
-    title: 'Data Analyst',
+    title: 'Commercial & Operations Analyst',
     subtitle: 'Circana Market Research · Dublin, Ireland',
-    detail: '200+ enterprise accounts · $10M+ EMEA portfolio · 100% on-time delivery · 25% fewer data issues',
+    detail: '200+ client EMEA portfolio · 25% fewer recurring errors · 20% less manual reporting',
     color: '#06b6d4',
     icon: '🚀',
     delay: 600,
@@ -183,10 +183,10 @@ const About = () => {
                 {[
                   { label: 'Location', value: 'Dublin, Ireland', icon: '📍' },
                   { label: 'Work Rights', value: 'Authorised in Ireland', icon: '✅' },
-                  { label: 'Experience', value: '5+ Years', icon: '📊' },
+                  { label: 'Experience', value: '4.5+ Years', icon: '📊' },
                   { label: 'Education', value: 'MSc + BEng', icon: '🎓' },
                   { label: 'Companies', value: '3 Major Firms', icon: '🏢' },
-                  { label: 'Specialisation', value: 'Data & BI', icon: '🔍' },
+                  { label: 'Specialisation', value: 'Commercial & BI', icon: '🔍' },
                 ].map((fact, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
                     <span className="text-base mt-0.5">{fact.icon}</span>

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { education, awards } from '../data/resumeData';
+import { education, awards, certifications } from '../data/resumeData';
 
 const useVisible = (threshold = 0.1) => {
   const ref = useRef(null);
@@ -189,7 +189,7 @@ const Education = () => {
             Education &amp; <span className="gradient-text">Awards</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Academic foundations in statistical modelling, risk analytics, and engineering — complementing 5+ years of practical data expertise
+            Academic foundations in statistical modelling, risk analytics, and engineering — complementing 4.5+ years of practical commercial and data analysis expertise
           </p>
         </div>
 
@@ -240,6 +240,30 @@ const Education = () => {
             <div className="flex flex-col gap-3">
               {awards.map((award, i) => (
                 <AwardCard key={i} award={award} index={i} />
+              ))}
+            </div>
+
+            {/* Certifications */}
+            <h3 className="text-lg font-bold text-white mt-8 mb-5 flex items-center gap-2">
+              <span className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border border-emerald-500/20 flex items-center justify-center text-sm">📜</span>
+              Certifications
+            </h3>
+            <div className="flex flex-col gap-3">
+              {certifications.map((cert, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl p-4 border border-white/[0.08]"
+                  style={{ background: 'rgba(255,255,255,0.03)' }}
+                >
+                  <p className="text-sm font-semibold text-white">{cert.title}</p>
+                  <p className="text-xs text-gray-500 mt-1">{cert.organization}</p>
+                  <span
+                    className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-[11px] font-semibold"
+                    style={{ color: cert.color, background: `${cert.color}15`, border: `1px solid ${cert.color}30` }}
+                  >
+                    {cert.status}
+                  </span>
+                </div>
               ))}
             </div>
 

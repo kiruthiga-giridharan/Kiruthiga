@@ -186,7 +186,7 @@ const Hero = () => {
         >
           <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyan-400/70" />
           <p className="text-lg sm:text-xl text-gray-300 font-light tracking-[0.3em] uppercase">
-            Data Analyst
+            Commercial Analyst
           </p>
           <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-400/70" />
         </div>
@@ -195,14 +195,14 @@ const Hero = () => {
         <p
           className={`text-sm sm:text-base text-cyan-400/75 font-medium tracking-widest mb-5 transition-all duration-1000 delay-[350ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          Python &nbsp;•&nbsp; SQL &nbsp;•&nbsp; Power BI &nbsp;•&nbsp; Tableau &nbsp;•&nbsp; Pandas &nbsp;•&nbsp; NumPy
+          SQL &nbsp;•&nbsp; Tableau &nbsp;•&nbsp; Power BI &nbsp;•&nbsp; Advanced Excel &nbsp;•&nbsp; Python &nbsp;•&nbsp; P&amp;L Insights
         </p>
 
         {/* Summary */}
         <p
           className={`text-gray-400 max-w-2xl mx-auto mb-14 text-[0.95rem] leading-relaxed transition-all duration-1000 delay-[450ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          4+ years transforming complex datasets into actionable insights across enterprise, banking, and commercial environments. Delivering 100% accuracy and on-time analytical reporting at scale.
+          4.5+ years turning large datasets into actionable insights that drive conversion, margin, and commercial growth across a 200+ client EMEA portfolio.
         </p>
 
         {/* KPI Stats */}
