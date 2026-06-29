@@ -202,7 +202,7 @@ const Hero = () => {
         <p
           className={`text-gray-400 max-w-2xl mx-auto mb-14 text-[0.95rem] leading-relaxed transition-all duration-1000 delay-[450ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          5+ years transforming complex datasets into actionable insights across enterprise, banking, and commercial environments. Delivering 100% accuracy and on-time analytical reporting at scale.
+          4+ years transforming complex datasets into actionable insights across enterprise, banking, and commercial environments. Delivering 100% accuracy and on-time analytical reporting at scale.
         </p>
 
         {/* KPI Stats */}
