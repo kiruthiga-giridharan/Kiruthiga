@@ -8,7 +8,7 @@ export const personalInfo = {
   subtitle: 'Python • SQL • Business Intelligence Reporting',
   email: 'kiruthigagiri@gmail.com',
   phone: '(+353) 892152652',
-  location: 'Dublin, Ireland',
+  location: 'Dublin 24, Ireland',
   linkedin: '#',
   authorisedToWork: 'Authorised to work in Ireland',
   summary:
