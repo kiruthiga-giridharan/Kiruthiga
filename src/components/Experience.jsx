@@ -177,7 +177,7 @@ const Experience = () => {
   const { ref: headerRef, visible: headerVisible } = useVisible();
 
   return (
-    <section id="experience" className="section bg-[#070714]">
+    <section id="experience" className="section bg-[#07090d]">
       <div className="max-w-4xl mx-auto px-4">
 
         {/* Header */}
@@ -209,10 +209,10 @@ const Experience = () => {
           <p className="text-center text-gray-500 text-[13px] mb-4 font-medium uppercase tracking-wider">Combined Impact Across All Roles</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: 'Years Total', value: '5+', color: '#06b6d4' },
-              { label: 'Accounts Managed', value: '200+', color: '#a855f7' },
-              { label: 'SQL Queries', value: '100+', color: '#6366f1' },
-              { label: 'Releases Managed', value: '15+', color: '#8b5cf6' },
+              { label: 'Years Experience', value: '4.5+', color: '#ec4899' },
+              { label: 'Customer Portfolio', value: '200+', color: '#c084fc' },
+              { label: 'Queries Resolved / Wk', value: '80+', color: '#7c3aed' },
+              { label: 'Releases Managed', value: '15+', color: '#a855f7' },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-2xl font-black mb-1" style={{ color: stat.color }}>{stat.value}</div>

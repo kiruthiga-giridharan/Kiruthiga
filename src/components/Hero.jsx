@@ -97,15 +97,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050510]">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#06080e]">
 
       {/* ─── Animated grid ─── */}
       <div
         className="absolute inset-0 opacity-[0.18]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(6,182,212,0.5) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(6,182,212,0.5) 1px, transparent 1px)`,
+            linear-gradient(rgba(236,72,153,0.5) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(236,72,153,0.5) 1px, transparent 1px)`,
           backgroundSize: '70px 70px',
         }}
       />
@@ -116,15 +116,15 @@ const Hero = () => {
       {/* ─── Gradient orbs ─── */}
       <div
         className="absolute top-[10%] left-[5%] w-[700px] h-[700px] rounded-full pointer-events-none orb-drift"
-        style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.18) 0%, transparent 65%)', filter: 'blur(20px)' }}
+        style={{ background: 'radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 65%)', filter: 'blur(20px)' }}
       />
       <div
         className="absolute bottom-[5%] right-[5%] w-[600px] h-[600px] rounded-full pointer-events-none orb-drift-reverse"
-        style={{ background: 'radial-gradient(circle, rgba(168,85,247,0.18) 0%, transparent 65%)', filter: 'blur(20px)' }}
+        style={{ background: 'radial-gradient(circle, rgba(192,132,252,0.18) 0%, transparent 65%)', filter: 'blur(20px)' }}
       />
       <div
         className="absolute top-[40%] left-[40%] w-[400px] h-[400px] rounded-full pointer-events-none opacity-10"
-        style={{ background: 'radial-gradient(circle, rgba(99,102,241,1) 0%, transparent 60%)', filter: 'blur(60px)' }}
+        style={{ background: 'radial-gradient(circle, rgba(124,58,237,1) 0%, transparent 60%)', filter: 'blur(60px)' }}
       />
 
       {/* ─── Floating particles ─── */}
@@ -138,9 +138,9 @@ const Hero = () => {
             width: `${p.size}px`,
             height: `${p.size}px`,
             background: p.id % 3 === 0
-              ? `rgba(168, 85, 247, ${p.opacity})`
-              : `rgba(6, 182, 212, ${p.opacity})`,
-            boxShadow: `0 0 ${p.size * 3}px ${p.id % 3 === 0 ? 'rgba(168,85,247,0.6)' : 'rgba(6,182,212,0.6)'}`,
+              ? `rgba(192, 132, 252, ${p.opacity})`
+              : `rgba(236, 72, 153, ${p.opacity})`,
+            boxShadow: `0 0 ${p.size * 3}px ${p.id % 3 === 0 ? 'rgba(192,132,252,0.6)' : 'rgba(236,72,153,0.6)'}`,
             animation: `float ${p.dur}s ease-in-out ${p.del}s infinite, twinkle ${p.dur * 0.7}s ease-in-out ${p.del * 0.5}s infinite`,
           }}
         />
@@ -151,12 +151,12 @@ const Hero = () => {
 
         {/* Status badge */}
         <div
-          className={`inline-flex items-center gap-2 px-5 py-2 rounded-full border border-cyan-500/25 bg-cyan-500/8 text-cyan-400 text-xs font-semibold tracking-widest uppercase mb-10 transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-          style={{ background: 'rgba(6,182,212,0.08)' }}
+          className={`inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gold-500/25 bg-gold-500/8 text-gold-400 text-xs font-semibold tracking-widest uppercase mb-10 transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+          style={{ background: 'rgba(236,72,153,0.08)' }}
         >
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" style={{ animation: 'ping-slow 2s ease-out infinite' }} />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400" />
+            <span className="absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75" style={{ animation: 'ping-slow 2s ease-out infinite' }} />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-gold-400" />
           </span>
           Available for Opportunities · Dublin, Ireland
         </div>
@@ -168,7 +168,7 @@ const Hero = () => {
           <span
             className="block text-[clamp(3.5rem,12vw,8rem)] text-transparent bg-clip-text"
             style={{
-              backgroundImage: 'linear-gradient(135deg, #22d3ee 0%, #818cf8 50%, #c084fc 100%)',
+              backgroundImage: 'linear-gradient(135deg, #f9a8d4 0%, #e879f9 50%, #c084fc 100%)',
               backgroundSize: '200% 200%',
               animation: 'gradientShift 4s ease infinite',
             }}
@@ -184,18 +184,18 @@ const Hero = () => {
         <div
           className={`flex items-center justify-center gap-4 mb-5 transition-all duration-1000 delay-[250ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyan-400/70" />
+          <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold-400/70" />
           <p className="text-lg sm:text-xl text-gray-300 font-light tracking-[0.3em] uppercase">
-            Data Analyst
+            Customer Operations Professional
           </p>
-          <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-400/70" />
+          <div className="h-px w-16 bg-gradient-to-l from-transparent to-nav-400/70" />
         </div>
 
         {/* Tech tags */}
         <p
-          className={`text-sm sm:text-base text-cyan-400/75 font-medium tracking-widest mb-5 transition-all duration-1000 delay-[350ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`text-sm sm:text-base text-gold-400/75 font-medium tracking-widest mb-5 transition-all duration-1000 delay-[350ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          Python &nbsp;•&nbsp; SQL &nbsp;•&nbsp; Power BI &nbsp;•&nbsp; Tableau &nbsp;•&nbsp; Pandas &nbsp;•&nbsp; NumPy
+          Customer Operations &nbsp;&bull;&nbsp; Advanced Excel &nbsp;&bull;&nbsp; SAP S/4HANA &nbsp;&bull;&nbsp; KPI Reporting &nbsp;&bull;&nbsp; SQL &nbsp;&bull;&nbsp; Power BI
         </p>
 
         {/* Summary */}
@@ -216,19 +216,19 @@ const Hero = () => {
               style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(20px)' }}
             >
               {/* Corner accent */}
-              <div className="absolute top-2 right-2 w-1.5 h-1.5 rounded-full bg-cyan-400/50 group-hover:bg-cyan-400 transition-colors" />
+              <div className="absolute top-2 right-2 w-1.5 h-1.5 rounded-full bg-gold-400/50 group-hover:bg-gold-400 transition-colors" />
 
-              <div className="flex items-center gap-2 mb-2 text-cyan-400/60 group-hover:text-cyan-400 transition-colors">
+              <div className="flex items-center gap-2 mb-2 text-gold-400/60 group-hover:text-gold-400 transition-colors">
                 {icons[stat.icon]}
               </div>
               <div className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text mb-1"
-                style={{ backgroundImage: 'linear-gradient(135deg, #22d3ee, #a855f7)' }}>
+                style={{ backgroundImage: 'linear-gradient(135deg, #f9a8d4, #c084fc)' }}>
                 <CountUp end={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-[11px] text-gray-400 font-medium tracking-wide uppercase">{stat.label}</div>
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gold-500/5 to-nav-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           ))}
         </div>
@@ -239,8 +239,8 @@ const Hero = () => {
         >
           <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group relative px-8 py-4 rounded-xl font-semibold text-white overflow-hidden hover:scale-105 active:scale-95 transition-all duration-200 shadow-xl shadow-cyan-500/20"
-            style={{ background: 'linear-gradient(135deg, #06b6d4, #a855f7)' }}
+            className="group relative px-8 py-4 rounded-xl font-semibold text-white overflow-hidden hover:scale-105 active:scale-95 transition-all duration-200 shadow-xl shadow-gold-500/20"
+            style={{ background: 'linear-gradient(135deg, #ec4899, #c084fc)' }}
           >
             <span className="relative z-10">Get In Touch</span>
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -261,7 +261,7 @@ const Hero = () => {
         <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">Scroll</span>
         <div className="w-5 h-8 rounded-full border border-gray-600 flex items-start justify-center pt-1.5">
           <div
-            className="w-1 h-2 rounded-full bg-cyan-400"
+            className="w-1 h-2 rounded-full bg-gold-400"
             style={{ animation: 'float 2s ease-in-out infinite' }}
           />
         </div>

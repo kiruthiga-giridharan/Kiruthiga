@@ -20,13 +20,13 @@ const sizeMap = {
 };
 
 const categoryColors = {
-  'Programming': '#06b6d4',
-  'Database': '#a855f7',
-  'BI Tools': '#6366f1',
-  'Business Apps': '#f59e0b',
-  'Cloud': '#3b82f6',
-  'Tools': '#8b5cf6',
-  'Delivery': '#ec4899',
+  'Reporting': '#ec4899',
+  'Database': '#c084fc',
+  'BI Tools': '#7c3aed',
+  'ERP/CRM': '#f9a8d4',
+  'Process': '#f472b6',
+  'Process': '#f472b6',
+  'Delivery': '#e879f9',
 };
 
 const categories = [...new Set(technologies.map(t => t.category))];
@@ -123,7 +123,7 @@ const TechStack = () => {
     : technologies.filter(t => t.category === filter);
 
   return (
-    <section id="techstack" className="section bg-[#070714]">
+    <section id="techstack" className="section bg-[#07090d]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -146,7 +146,7 @@ const TechStack = () => {
             onClick={() => setFilter('All')}
             className={`px-4 py-2 rounded-xl text-[13px] font-medium transition-all duration-200 ${
               filter === 'All'
-                ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20'
+                ? 'bg-gradient-to-r from-gold-500 to-nav-500 text-white shadow-lg shadow-gold-500/20'
                 : 'text-gray-400 border border-white/10 bg-white/[0.04] hover:text-white hover:border-white/20'
             }`}
           >
@@ -161,10 +161,10 @@ const TechStack = () => {
               }`}
               style={{
                 background: filter === cat
-                  ? `${categoryColors[cat] || '#06b6d4'}25`
+                  ? `${categoryColors[cat] || '#ec4899'}25`
                   : 'rgba(255,255,255,0.04)',
-                border: `1px solid ${filter === cat ? (categoryColors[cat] || '#06b6d4') + '50' : 'rgba(255,255,255,0.08)'}`,
-                color: filter === cat ? (categoryColors[cat] || '#06b6d4') : undefined,
+                border: `1px solid ${filter === cat ? (categoryColors[cat] || '#ec4899') + '50' : 'rgba(255,255,255,0.08)'}`,
+                color: filter === cat ? (categoryColors[cat] || '#ec4899') : undefined,
               }}
             >
               {cat}
@@ -193,10 +193,10 @@ const TechStack = () => {
         >
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
             {[
-              { label: 'Tools Listed', value: technologies.length, color: '#06b6d4' },
-              { label: 'Categories', value: categories.length, color: '#a855f7' },
-              { label: 'Top Skill Level', value: '93%', color: '#22d3ee' },
-              { label: 'Years Applied', value: '5+', color: '#6366f1' },
+              { label: 'Tools Listed', value: technologies.length, color: '#ec4899' },
+              { label: 'Categories', value: categories.length, color: '#c084fc' },
+              { label: 'Top Skill Level', value: '94%', color: '#f9a8d4' },
+              { label: 'Years Applied', value: '4.5+', color: '#7c3aed' },
             ].map((stat, i) => (
               <div key={i}>
                 <div className="text-2xl font-black mb-1" style={{ color: stat.color }}>{stat.value}</div>

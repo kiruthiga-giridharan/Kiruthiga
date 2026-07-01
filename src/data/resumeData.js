@@ -4,23 +4,23 @@ export const personalInfo = {
   name: 'Kiruthiga Giridharan',
   firstName: 'Kiruthiga',
   lastName: 'Giridharan',
-  title: 'Data Analyst',
-  subtitle: 'Python • SQL • Business Intelligence Reporting',
+  title: 'Customer Operations Professional',
+  subtitle: 'Customer Operations & Care • Account & Database Management • KPI Reporting & Process Improvement',
   email: 'kiruthigagiri@gmail.com',
   phone: '(+353) 892152652',
   location: 'Dublin, Ireland',
-  linkedin: '#',
+  linkedin: 'https://linkedin.com/in/kiruthiga-giridharan',
   authorisedToWork: 'Authorised to work in Ireland',
   summary:
-    'Data Analyst with 5+ years of experience collecting, cleaning, transforming, and analysing complex datasets to support business decisions across enterprise, banking, and commercial environments. Proficient in Python for data manipulation, cleaning, and statistical analysis, and SQL for data extraction and transformation from relational databases. Experienced building interactive dashboards and reports using Power BI and Tableau to visualise key metrics for senior stakeholders.',
+    'Customer operations professional with 4.5+ years delivering excellent service across consumer (B2C) and enterprise environments, owning a 200+ customer portfolio with 100% on-time delivery and consistently high satisfaction. Trusted point of contact who resolves high-volume customer queries within SLA, manages account registration and onboarding, and safeguards customer database integrity. Data-driven and highly organised, with strong Advanced Excel and SAP S/4HANA skills, turning reporting and analysis into decisions that improve customer outcomes. Proven record of continuous improvement (Lean / DMAIC), cutting recurring errors by 25% and manual effort by 20% while raising service quality.',
 };
 
-// ─── Hero KPI stats (from resume) ───
+// ─── Hero KPI stats ───
 export const heroStats = [
-  { label: 'Years Experience', value: 5, suffix: '+', icon: 'clock' },
-  { label: 'Enterprise Accounts', value: 200, suffix: '+', icon: 'building' },
-  { label: 'SQL Queries', value: 100, suffix: '+', icon: 'database' },
-  { label: 'Regulated Releases', value: 15, suffix: '+', icon: 'shield' },
+  { label: 'Years Experience', value: 4.5, suffix: '+', icon: 'clock' },
+  { label: 'Customer Portfolio', value: 200, suffix: '+', icon: 'building' },
+  { label: 'Queries Resolved / Wk', value: 80, suffix: '+', icon: 'database' },
+  { label: 'On-time Delivery', value: 100, suffix: '%', icon: 'shield' },
 ];
 
 // ─── Work Experience ───
@@ -28,79 +28,82 @@ export const experience = [
   {
     id: 1,
     company: 'Circana Market Research',
-    role: 'Data Analyst',
+    role: 'Customer Operations & Client Analyst',
     period: '2024 – Present',
     startYear: 2024,
     endYear: 2026,
     location: 'Dublin, Ireland',
-    tagline:
-      'Delivered end-to-end data analysis, reporting, and BI solutions for 200+ enterprise accounts across a $10M+ EMEA portfolio, operating across Commercial, Product, TechOps, and Client Success functions.',
+    tagline: 'Own end-to-end customer operations for a 200+ customer portfolio, resolving high-volume queries, safeguarding data integrity, and driving the reporting and process improvements that keep service running smoothly.',
     highlights: [
-      'Collected, cleaned, and transformed raw data from multiple enterprise sources using Python (Pandas, NumPy) and SQL, preparing structured datasets for analysis across 200+ accounts and 12+ concurrent programmes.',
-      'Performed statistical analysis on large datasets to identify trends, patterns, and data quality anomalies.',
-      'Achieved 100% on-time reporting delivery across all assigned accounts.',
-      'Delivered a 25% reduction in recurring data issues through systematic root cause analysis.',
+      'Owned the customer relationship for 200+ accounts as primary point of contact, resolving 80+ queries and issues weekly within SLA and sustaining consistently high customer satisfaction.',
+      'Managed customer account registration and onboarding for 25+ new accounts per quarter, personally safeguarding customer database integrity through SQL and SAP S/4HANA validation and reconciliation.',
+      'Delivered accurate, on-time KPI reporting and analysis in Power BI, Tableau, and Advanced Excel, giving the team and leadership a clear, real-time view of customer performance with 100% on-time delivery.',
+      'Drove continuous improvement across customer processes, cutting recurring errors by 25% and manual effort by 20% through standardisation and automation.',
+      'Investigated and resolved data discrepancies with SQL and structured root cause analysis, protecting the accuracy of customer records and preventing repeat issues.',
+      'Acted as the trusted link between customers and internal teams, coordinating fast resolution and turning customer feedback into lasting process improvements.',
     ],
     achievements: [
       { label: 'On-time Delivery', value: 100, suffix: '%' },
-      { label: 'Data Issue Reduction', value: 25, suffix: '%' },
-      { label: 'Accounts Managed', value: 200, suffix: '+' },
+      { label: 'Recurring Error Reduction', value: 25, suffix: '%' },
+      { label: 'Accounts Onboarded / Qtr', value: 25, suffix: '+' },
     ],
-    technologies: ['Python', 'Pandas', 'NumPy', 'SQL', 'Power BI', 'Tableau', 'Azure Pipeline', 'Jira'],
-    color: '#06b6d4',
-    accentColor: 'rgba(6,182,212,0.15)',
+    technologies: ['SQL', 'SAP S/4HANA', 'Power BI', 'Tableau', 'Advanced Excel', 'Jira', 'Confluence'],
+    color: '#ec4899',
+    accentColor: 'rgba(236,72,153,0.15)',
   },
   {
     id: 2,
     company: 'Estee Lauder Companies',
-    role: 'Business and Data Analyst',
+    role: 'Customer & Retail Operations (B2C)',
     period: '2022 – 2024',
     startYear: 2022,
     endYear: 2024,
     location: 'Dublin, Ireland',
-    tagline:
-      'Supported commercial analytics and retail performance reporting for a global beauty brand across 8 retail locations in Ireland.',
+    tagline: 'Delivered customer service and retail operations for a global B2C consumer beauty brand, supporting the end-to-end customer experience across retail locations.',
     highlights: [
-      'Analysed CRM datasets (Salesforce, MS Dynamics) and retail sales data to identify performance gaps through structured as-is analysis, contributing to a 20%+ uplift in conversion rate across 8 locations.',
-      'Designed and maintained Excel-based KPI tracking models using VLOOKUP and conditional logic to provide cross-functional visibility of weekly performance metrics.',
-      'Produced structured performance reports and analytical trackers for technical and non-technical stakeholders, improving reporting turnaround time by 30% across the commercial team.',
-      'Conducted vendor spend analysis using structured data models, translating findings into supplier negotiations that achieved a 15% reduction in procurement costs, saving approximately EUR 120K annually.',
+      'Handled customer queries and resolved issues across retail operations, delivering excellent B2C customer service and a smooth customer experience.',
+      'Maintained accurate customer and account records and supported day-to-day transaction and reporting accuracy across retail teams.',
+      'Built Advanced Excel KPI trackers (VLOOKUP, Pivot Tables) and Power BI reports to monitor customer and sales performance.',
+      'Identified gaps in the customer and sales process and implemented improvements, lifting conversion by 20%+ and improving the customer experience.',
+      'Resolved escalated customer queries and complaints in a fast-paced retail environment, consistently turning issues into positive customer experiences and repeat custom.',
+      'Balanced multiple priorities to tight deadlines during peak retail periods and product launches, keeping service quality and record accuracy high throughout.',
+      'Coordinated 5+ customer-facing product launches annually, managing logistics and communication from planning to execution.',
     ],
     achievements: [
-      { label: 'Conversion Rate Uplift', value: 20, suffix: '%+' },
-      { label: 'Reporting Improvement', value: 30, suffix: '%' },
-      { label: 'Cost Savings', value: 120, suffix: 'K EUR' },
+      { label: 'Conversion Uplift', value: 20, suffix: '%+' },
+      { label: 'Product Launches / Yr', value: 5, suffix: '+' },
+      { label: 'Procurement Cost Cut', value: 15, suffix: '%' },
     ],
-    technologies: ['Salesforce CRM', 'MS Dynamics', 'Advanced Excel', 'Power BI', 'SQL', 'Confluence'],
-    color: '#a855f7',
-    accentColor: 'rgba(168,85,247,0.15)',
+    technologies: ['Advanced Excel', 'Power BI', 'Pivot Tables', 'VLOOKUP', 'Salesforce CRM', 'MS Dynamics'],
+    color: '#c084fc',
+    accentColor: 'rgba(192,132,252,0.15)',
   },
   {
     id: 3,
     company: 'Tata Consultancy Services',
-    role: 'Data and Systems Analyst',
+    role: 'Systems Analyst',
     period: '2020 – 2022',
     startYear: 2020,
     endYear: 2022,
     location: 'Chennai, India',
-    tagline:
-      'Delivered SQL-based data validation, statistical analysis, and compliance reporting across 15+ regulated banking system releases for Nationwide Bank.',
+    tagline: 'Delivered data validation, analysis, and reporting for banking and insurance applications across 15+ releases, maintaining high data integrity.',
     highlights: [
-      'Designed and executed 100+ SQL queries to extract, validate, and verify complex banking transaction datasets, maintaining 100% data accuracy across all 15 regulated releases for Nationwide Bank.',
-      'Cleaned and transformed large-scale banking datasets using Python and SQL to support compliance and audit reporting, ensuring data integrity across security-critical system releases.',
-      'Conducted structured root cause analysis on data and process defects during testing phases, reducing defect recurrence by 30% and improving system reliability by 25% across subsequent releases.',
-      'Collaborated with cross-functional teams (development, QA, business stakeholders) to translate analytical findings into actionable system improvements.',
-      'Coordinated data validation activities during UAT including test scenario validation and defect triage, achieving zero critical defects at go-live across 100% of managed releases.',
-      'Maintained 98% quality adherence — awarded Top Performer Q3 FY2021 and Best Project Member 2021.',
+      'Designed and executed 100+ SQL queries to validate and reconcile customer and transaction datasets, achieving 100% data accuracy across all releases.',
+      'Extracted and structured data from SAP ERP using SQL joins and stored procedures for downstream reporting.',
+      'Led root cause analysis on data discrepancies; corrective actions reduced recurrence by 30% and improved system reliability by 25%.',
+      'Supported customer account and claims data accuracy for a major banking and insurance client, keeping records correct, consistent, and audit-ready.',
+      'Coordinated UAT and resolved issues across 15+ releases, communicating clearly with stakeholders to fix defects before go-live.',
+      'Identified and implemented process improvements that streamlined data validation and reduced manual effort.',
+      'Documented processes and resolutions in Jira and Confluence, supporting traceability and stakeholder alignment.',
     ],
     achievements: [
       { label: 'Data Accuracy', value: 100, suffix: '%' },
       { label: 'Defect Reduction', value: 30, suffix: '%' },
-      { label: 'Quality Adherence', value: 98, suffix: '%' },
+      { label: 'Reliability Improvement', value: 25, suffix: '%' },
     ],
-    technologies: ['SQL', 'Python', 'Azure Pipeline', 'Jira', 'Confluence', 'Excel'],
-    color: '#8b5cf6',
-    accentColor: 'rgba(139,92,246,0.15)',
+    technologies: ['SQL', 'SAP ERP', 'Jira', 'Confluence', 'Advanced Excel'],
+    color: '#a855f7',
+    accentColor: 'rgba(168,85,247,0.15)',
   },
 ];
 
@@ -110,168 +113,154 @@ export const education = [
     id: 1,
     institution: 'Trinity College Dublin',
     degree: 'MSc in Management',
-    specialization: 'Statistical Modelling, Enterprise Risk and Analytics',
+    specialization: 'MSc in Management',
     period: '2022 – 2023',
     location: 'Dublin, Ireland',
-    research:
-      'Data-Driven Decision Frameworks and Customer Retention Strategies in Regulated Consumer Markets, Ireland',
+    research: 'Customer Retention Marketing Strategies in the Cosmetics Industry',
     achievements: ['Masters Graduate', 'Statistical Modelling Specialisation'],
-    color: '#06b6d4',
+    color: '#ec4899',
   },
   {
     id: 2,
     institution: 'Anna University',
-    degree: 'Bachelor of Engineering',
+    degree: 'BE in Instrumentation & Control Engineering',
     specialization: 'CGPA 8.2/10 · First Class Graduate',
     cgpa: 8.2,
     period: '2016 – 2020',
     location: 'Chennai, India',
-    research: 'Final Year Project: Network Security and Intrusion Detection Systems',
+    research: 'Runner-up, 18th ISTE Engineering Student Convention, for excellence in technical innovation',
     achievements: ['Best Outgoing Student Award 2020', 'Elected Student Coordinator', 'First Class Graduate'],
-    color: '#a855f7',
+    color: '#c084fc',
   },
 ];
 
-// ─── Skills (grouped from resume competencies) ───
+// ─── Skills ───
 export const skillCategories = [
   {
-    name: 'Programming & Analysis',
-    color: '#06b6d4',
+    name: 'Customer Service & Operations',
+    color: '#ec4899',
     skills: [
-      { name: 'Python', level: 90 },
-      { name: 'Pandas', level: 88 },
-      { name: 'NumPy', level: 82 },
-      { name: 'Statistical Analysis', level: 82 },
+      { name: 'Customer Care & Query Resolution', level: 94 },
+      { name: 'Account Registration & Onboarding', level: 90 },
+      { name: 'SLA-Driven Service', level: 92 },
+      { name: 'Customer Database Integrity', level: 90 },
     ],
   },
   {
-    name: 'SQL & Database',
+    name: 'Reporting & Analysis',
+    color: '#c084fc',
+    skills: [
+      { name: 'KPI Reporting & Analysis', level: 90 },
+      { name: 'Advanced Excel', level: 88 },
+      { name: 'Power BI', level: 86 },
+      { name: 'SQL', level: 88 },
+    ],
+  },
+  {
+    name: 'Process & Delivery',
     color: '#a855f7',
     skills: [
-      { name: 'SQL', level: 92 },
-      { name: 'Data Extraction', level: 90 },
-      { name: 'Data Transformation', level: 88 },
-      { name: 'Data Validation', level: 92 },
-    ],
-  },
-  {
-    name: 'BI & Reporting',
-    color: '#6366f1',
-    skills: [
-      { name: 'Power BI', level: 85 },
-      { name: 'Tableau', level: 83 },
-      { name: 'Advanced Excel', level: 88 },
-      { name: 'Dashboard Development', level: 84 },
+      { name: 'Continuous Improvement (Lean/DMAIC)', level: 85 },
+      { name: 'Process Efficiency', level: 88 },
+      { name: 'Multitasking & Prioritisation', level: 90 },
+      { name: 'Stakeholder Communication', level: 92 },
     ],
   },
   {
     name: 'Business Tools',
-    color: '#8b5cf6',
+    color: '#f9a8d4',
     skills: [
-      { name: 'Salesforce CRM', level: 75 },
-      { name: 'MS Dynamics', level: 73 },
-      { name: 'Jira', level: 80 },
-      { name: 'Confluence', level: 78 },
+      { name: 'SAP S/4HANA', level: 80 },
+      { name: 'Salesforce CRM', level: 78 },
+      { name: 'MS Dynamics', level: 75 },
+      { name: 'Jira & Confluence', level: 80 },
     ],
   },
   {
-    name: 'Delivery & Cloud',
-    color: '#3b82f6',
+    name: 'BI & Data Validation',
+    color: '#7c3aed',
     skills: [
-      { name: 'Agile (Scrum/Kanban)', level: 78 },
-      { name: 'Azure Pipeline', level: 65 },
-      { name: 'Root Cause Analysis', level: 88 },
-      { name: 'Stakeholder Engagement', level: 85 },
+      { name: 'Tableau', level: 82 },
+      { name: 'Data Validation & Integrity', level: 90 },
+      { name: 'Data-Driven Decision Making', level: 88 },
+      { name: 'Root Cause Analysis', level: 87 },
     ],
   },
 ];
 
-// ─── Radar chart data (core competency areas from resume) ───
+// ─── Radar chart data ───
 export const radarData = [
-  { subject: 'Data Analysis', value: 93, fullMark: 100 },
-  { subject: 'SQL & Database', value: 92, fullMark: 100 },
-  { subject: 'Python', value: 88, fullMark: 100 },
-  { subject: 'BI & Reporting', value: 85, fullMark: 100 },
-  { subject: 'Statistical Analysis', value: 82, fullMark: 100 },
-  { subject: 'Stakeholder Mgmt', value: 83, fullMark: 100 },
-  { subject: 'Data Validation', value: 90, fullMark: 100 },
-  { subject: 'Agile Delivery', value: 78, fullMark: 100 },
+  { subject: 'Customer Service', value: 94, fullMark: 100 },
+  { subject: 'KPI Reporting', value: 90, fullMark: 100 },
+  { subject: 'Advanced Excel', value: 88, fullMark: 100 },
+  { subject: 'SQL & Data', value: 88, fullMark: 100 },
+  { subject: 'Stakeholder Comms', value: 92, fullMark: 100 },
+  { subject: 'SAP S/4HANA', value: 80, fullMark: 100 },
+  { subject: 'Process Improvement', value: 85, fullMark: 100 },
+  { subject: 'Account Management', value: 90, fullMark: 100 },
 ];
 
-// ─── Top skills for circular rings ───
+// ─── Top skills ───
 export const topSkills = [
-  { name: 'SQL', level: 92, color: '#a855f7' },
-  { name: 'Python', level: 90, color: '#06b6d4' },
-  { name: 'Data Analysis', level: 93, color: '#22d3ee' },
-  { name: 'Power BI', level: 85, color: '#6366f1' },
-  { name: 'Advanced Excel', level: 88, color: '#8b5cf6' },
-  { name: 'Tableau', level: 83, color: '#3b82f6' },
+  { name: 'Customer Service', level: 94, color: '#ec4899' },
+  { name: 'Advanced Excel', level: 88, color: '#f9a8d4' },
+  { name: 'KPI Reporting', level: 90, color: '#c084fc' },
+  { name: 'SQL', level: 88, color: '#a855f7' },
+  { name: 'SAP S/4HANA', level: 80, color: '#e879f9' },
+  { name: 'Power BI', level: 86, color: '#7c3aed' },
 ];
 
-// ─── Career impact metrics (directly from resume) ───
+// ─── Career impact metrics ───
 export const impactMetrics = [
-  { metric: 'On-time Delivery', value: 100, company: 'Circana', color: '#06b6d4' },
-  { metric: 'Data Accuracy', value: 100, company: 'TCS', color: '#06b6d4' },
-  { metric: 'Quality Adherence', value: 98, company: 'TCS', color: '#22d3ee' },
-  { metric: 'Reporting Turnaround', value: 30, company: 'Estee Lauder', color: '#a855f7' },
-  { metric: 'Defect Reduction', value: 30, company: 'TCS', color: '#8b5cf6' },
-  { metric: 'Data Issue Reduction', value: 25, company: 'Circana', color: '#6366f1' },
-  { metric: 'Conversion Uplift', value: 20, company: 'Estee Lauder', color: '#a855f7' },
-  { metric: 'Cost Reduction', value: 15, company: 'Estee Lauder', color: '#ec4899' },
+  { metric: 'On-time Delivery', value: 100, company: 'Circana', color: '#ec4899' },
+  { metric: 'Data Accuracy', value: 100, company: 'TCS', color: '#f9a8d4' },
+  { metric: 'Recurring Error Reduction', value: 25, company: 'Circana', color: '#c084fc' },
+  { metric: 'Defect Reduction', value: 30, company: 'TCS', color: '#a855f7' },
+  { metric: 'Manual Effort Reduction', value: 20, company: 'Circana', color: '#7c3aed' },
+  { metric: 'Conversion Uplift', value: 20, company: 'Estee Lauder', color: '#e879f9' },
+  { metric: 'System Reliability Improvement', value: 25, company: 'TCS', color: '#f472b6' },
 ];
 
-// ─── Technology distribution (relative frequency in resume) ───
+// ─── Technology distribution ───
 export const techDistribution = [
-  { name: 'Python & Libraries', value: 30, color: '#06b6d4' },
-  { name: 'SQL & Database', value: 28, color: '#a855f7' },
-  { name: 'BI Tools', value: 22, color: '#6366f1' },
-  { name: 'Business Apps', value: 12, color: '#8b5cf6' },
-  { name: 'Cloud & DevOps', value: 8, color: '#3b82f6' },
+  { name: 'Customer & Account Ops', value: 30, color: '#ec4899' },
+  { name: 'Advanced Excel & SQL', value: 26, color: '#c084fc' },
+  { name: 'BI Tools (Power BI / Tableau)', value: 20, color: '#7c3aed' },
+  { name: 'SAP / CRM / ERP', value: 18, color: '#a855f7' },
+  { name: 'Process & Delivery Tools', value: 6, color: '#e879f9' },
 ];
 
-// ─── All technologies (for TechStack section) ───
+// ─── All technologies ───
 export const technologies = [
-  { name: 'Python', category: 'Programming', size: 'xl', color: '#06b6d4', level: 90 },
-  { name: 'SQL', category: 'Database', size: 'xl', color: '#a855f7', level: 92 },
-  { name: 'Pandas', category: 'Programming', size: 'lg', color: '#06b6d4', level: 88 },
-  { name: 'NumPy', category: 'Programming', size: 'md', color: '#22d3ee', level: 82 },
-  { name: 'Power BI', category: 'BI Tools', size: 'lg', color: '#6366f1', level: 85 },
-  { name: 'Tableau', category: 'BI Tools', size: 'lg', color: '#4f46e5', level: 83 },
-  { name: 'Excel', category: 'BI Tools', size: 'lg', color: '#10b981', level: 88 },
-  { name: 'Salesforce', category: 'Business Apps', size: 'md', color: '#0ea5e9', level: 75 },
-  { name: 'MS Dynamics', category: 'Business Apps', size: 'md', color: '#f59e0b', level: 73 },
-  { name: 'Azure Pipeline', category: 'Cloud', size: 'sm', color: '#3b82f6', level: 65 },
-  { name: 'Jira', category: 'Tools', size: 'md', color: '#6366f1', level: 80 },
-  { name: 'Confluence', category: 'Tools', size: 'sm', color: '#8b5cf6', level: 78 },
-  { name: 'Scrum', category: 'Delivery', size: 'sm', color: '#a855f7', level: 78 },
-  { name: 'Kanban', category: 'Delivery', size: 'sm', color: '#ec4899', level: 78 },
+  { name: 'Advanced Excel', category: 'Reporting', size: 'xl', color: '#ec4899', level: 88 },
+  { name: 'SQL', category: 'Database', size: 'xl', color: '#c084fc', level: 88 },
+  { name: 'SAP S/4HANA', category: 'ERP/CRM', size: 'xl', color: '#f9a8d4', level: 80 },
+  { name: 'Power BI', category: 'Reporting', size: 'lg', color: '#7c3aed', level: 86 },
+  { name: 'Tableau', category: 'Reporting', size: 'lg', color: '#a855f7', level: 82 },
+  { name: 'Salesforce CRM', category: 'ERP/CRM', size: 'md', color: '#0ea5e9', level: 78 },
+  { name: 'MS Dynamics', category: 'ERP/CRM', size: 'md', color: '#f59e0b', level: 75 },
+  { name: 'Pivot Tables', category: 'Reporting', size: 'md', color: '#e879f9', level: 88 },
+  { name: 'Jira', category: 'Tools', size: 'md', color: '#7c3aed', level: 80 },
+  { name: 'Confluence', category: 'Tools', size: 'sm', color: '#a855f7', level: 78 },
+  { name: 'MS Office', category: 'Reporting', size: 'sm', color: '#10b981', level: 88 },
+  { name: 'Lean / DMAIC', category: 'Process', size: 'sm', color: '#f472b6', level: 80 },
 ];
 
 // ─── Awards ───
 export const awards = [
+  { title: 'Top Performer Q3 FY2021', organization: 'Tata Consultancy Services', year: '2021', color: '#ec4899' },
+  { title: 'Best Project Member 2021', organization: 'Tata Consultancy Services', year: '2021', color: '#c084fc' },
+  { title: 'Best Outgoing Student Award 2020', organization: 'Anna University', year: '2020', color: '#7c3aed' },
+  { title: 'Runner-up, 18th ISTE Engineering Student Convention', organization: 'Anna University', year: '2020', color: '#a855f7' },
+];
+
+// ─── Certifications ───
+export const certifications = [
   {
-    title: 'Top Performer Q3 FY2021',
-    organization: 'Tata Consultancy Services',
-    year: '2021',
-    color: '#06b6d4',
-  },
-  {
-    title: 'Best Project Member 2021',
-    organization: 'Tata Consultancy Services',
-    year: '2021',
-    color: '#a855f7',
-  },
-  {
-    title: 'Best Outgoing Student Award 2020',
-    organization: 'Anna University',
-    year: '2020',
-    color: '#6366f1',
-  },
-  {
-    title: 'Elected Student Coordinator',
-    organization: 'Anna University',
-    year: '2016 – 2020',
-    color: '#8b5cf6',
+    title: 'PMP® — Project Management Professional',
+    organization: 'Project Management Institute (PMI)',
+    status: 'In Progress (Expected 2026)',
+    color: '#10b981',
   },
 ];
 
@@ -282,20 +271,13 @@ export const recommendations = [
     role: 'Senior Director, AI-Driven Operations',
     company: 'Circana',
     text: '"A highly dependable and talented professional who adapts quickly, integrates seamlessly, and consistently delivers high-quality results. A strong asset to any organization fortunate enough to have her."',
-    color: '#06b6d4',
+    color: '#ec4899',
   },
   {
     name: 'Magdalena Pisarska',
     role: 'Sr Manager, Data Management',
     company: 'Circana',
-    text: '"She seamlessly integrated into our team culture, was always open to feedback, using it to continuously improve and elevate her work. A massive asset wherever she goes next."',
-    color: '#a855f7',
-  },
-  {
-    name: 'Kristen Worth',
-    role: 'Manager',
-    company: 'Estee Lauder',
-    text: '"She is a clever, fast thinking, efficient and focused worker who consistently excels and would be a benefit to any employer."',
-    color: '#6366f1',
+    text: '"She seamlessly integrated into our team culture, was always open to feedback, using it to continuously grow and elevate her work. A massive asset wherever she goes next."',
+    color: '#c084fc',
   },
 ];
