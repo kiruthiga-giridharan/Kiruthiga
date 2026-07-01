@@ -20,7 +20,7 @@ const timelineEvents = [
     title: 'Bachelor of Engineering',
     subtitle: 'Anna University · Chennai, India',
     detail: 'CGPA 8.2/10 · First Class · Best Outgoing Student 2020',
-    color: '#a855f7',
+    color: '#c084fc',
     icon: '🎓',
     delay: 0,
   },
@@ -29,8 +29,8 @@ const timelineEvents = [
     type: 'work',
     title: 'Systems Analyst',
     subtitle: 'Tata Consultancy Services · Chennai, India',
-    detail: '100+ SQL queries · 100% data accuracy · 15+ banking releases · Top Performer FY2021',
-    color: '#8b5cf6',
+    detail: '100+ SQL queries · 100% data accuracy · 15+ releases · customer account & claims data · Top Performer FY2021',
+    color: '#a855f7',
     icon: '💼',
     delay: 150,
   },
@@ -39,28 +39,28 @@ const timelineEvents = [
     type: 'education',
     title: 'MSc in Management',
     subtitle: 'Trinity College Dublin · Dublin, Ireland',
-    detail: 'Statistical Modelling, Enterprise Risk & Analytics · Research on Data-Driven Decision Frameworks',
-    color: '#06b6d4',
+    detail: 'Research: Customer Retention Marketing Strategies in the Cosmetics Industry',
+    color: '#ec4899',
     icon: '🎓',
     delay: 300,
   },
   {
     year: '2022 – 2024',
     type: 'work',
-    title: 'Commercial Analyst',
+    title: 'Customer & Retail Operations (B2C)',
     subtitle: 'Estee Lauder Companies · Dublin, Ireland',
-    detail: '20%+ conversion uplift · 15% procurement cost cut · 5+ product launches/yr',
-    color: '#ec4899',
+    detail: '20%+ conversion uplift · 5+ product launches/yr · SLA-driven B2C customer service',
+    color: '#f472b6',
     icon: '💼',
     delay: 450,
   },
   {
     year: '2024 – Present',
     type: 'work',
-    title: 'Commercial & Operations Analyst',
+    title: 'Customer Operations & Client Analyst',
     subtitle: 'Circana Market Research · Dublin, Ireland',
-    detail: '200+ client EMEA portfolio · 25% fewer recurring errors · 20% less manual reporting',
-    color: '#06b6d4',
+    detail: '200+ customer portfolio · 80+ queries/week · 100% on-time delivery · 25% fewer errors',
+    color: '#ec4899',
     icon: '🚀',
     delay: 600,
   },
@@ -138,7 +138,7 @@ const About = () => {
   const { ref: headerRef, visible: headerVisible } = useVisible();
 
   return (
-    <section id="about" className="section bg-[#070714]">
+    <section id="about" className="section bg-[#07090d]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -160,7 +160,7 @@ const About = () => {
           {/* Timeline */}
           <div>
             <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-purple-500/20 border border-white/10 flex items-center justify-center text-sm">📅</span>
+              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-gold-500/20 to-nav-500/20 border border-white/10 flex items-center justify-center text-sm">📅</span>
               Career Timeline
             </h3>
             {timelineEvents.map((event, i) => (
@@ -186,7 +186,7 @@ const About = () => {
                   { label: 'Experience', value: '4.5+ Years', icon: '📊' },
                   { label: 'Education', value: 'MSc + BEng', icon: '🎓' },
                   { label: 'Companies', value: '3 Major Firms', icon: '🏢' },
-                  { label: 'Specialisation', value: 'Commercial & BI', icon: '🔍' },
+                  { label: 'Specialisation', value: 'Customer Operations', icon: '🔍' },
                 ].map((fact, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
                     <span className="text-base mt-0.5">{fact.icon}</span>

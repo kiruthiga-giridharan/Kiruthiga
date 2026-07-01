@@ -10,6 +10,21 @@ export default {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      colors: {
+        gold: {
+          300: '#fce7f3',
+          400: '#f9a8d4',
+          500: '#ec4899',
+          600: '#db2777',
+          700: '#9d174d',
+        },
+        nav: {
+          400: '#e879f9',
+          500: '#c084fc',
+          600: '#a855f7',
+          700: '#7c3aed',
+        },
+      },
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'float-slow': 'float 10s ease-in-out 2s infinite',

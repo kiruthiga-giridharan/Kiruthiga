@@ -30,7 +30,7 @@ const DarkTooltip = ({ active, payload, label }) => {
     }}>
       {label && <p style={{ color: '#94a3b8', fontSize: 11, marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{label}</p>}
       {payload.map((p, i) => (
-        <p key={i} style={{ color: p.fill || p.color || '#22d3ee', fontWeight: 700, fontSize: 14 }}>
+        <p key={i} style={{ color: p.fill || p.color || '#f9a8d4', fontWeight: 700, fontSize: 14 }}>
           {p.name ? `${p.name}: ` : ''}{p.value}
           {p.name === 'value' || !p.name ? '%' : ''}
         </p>
@@ -69,7 +69,7 @@ const CareerInsights = () => {
   const [activePieIndex, setActivePieIndex] = useState(null);
 
   return (
-    <section id="insights" className="section bg-[#050510]">
+    <section id="insights" className="section bg-[#06080e]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -96,7 +96,7 @@ const CareerInsights = () => {
             style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(20px)' }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-cyan-400 to-purple-500" />
+              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-gold-400 to-nav-500" />
               <div>
                 <h3 className="text-base font-bold text-white">Career Impact Metrics</h3>
                 <p className="text-[12px] text-gray-500">Quantified achievements across all roles (from resume)</p>
@@ -140,9 +140,9 @@ const CareerInsights = () => {
 
             <div className="flex flex-wrap gap-3 mt-4">
               {[
-                { label: 'Circana', color: '#06b6d4' },
-                { label: 'TCS', color: '#a855f7' },
-                { label: 'Estee Lauder', color: '#ec4899' },
+                { label: 'Circana', color: '#ec4899' },
+                { label: 'TCS', color: '#c084fc' },
+                { label: 'Estee Lauder', color: '#f472b6' },
               ].map(item => (
                 <div key={item.label} className="flex items-center gap-1.5">
                   <div className="w-2.5 h-2.5 rounded-full" style={{ background: item.color }} />
@@ -159,7 +159,7 @@ const CareerInsights = () => {
             style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(20px)' }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-purple-400 to-indigo-500" />
+              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-nav-400 to-nav-700" />
               <div>
                 <h3 className="text-base font-bold text-white">Technology Distribution</h3>
                 <p className="text-[12px] text-gray-500">Relative usage across all roles</p>
@@ -221,7 +221,7 @@ const CareerInsights = () => {
             style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(20px)' }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-indigo-400 to-pink-500" />
+              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-nav-600 to-gold-600" />
               <div>
                 <h3 className="text-base font-bold text-white">Career Progression</h3>
                 <p className="text-[12px] text-gray-500">Years of cumulative experience over time</p>
@@ -233,8 +233,8 @@ const CareerInsights = () => {
                 <AreaChart data={careerProgressData} margin={{ top: 10, right: 10, bottom: 0, left: 0 }}>
                   <defs>
                     <linearGradient id="expGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#06b6d4" stopOpacity={0.4} />
-                      <stop offset="95%" stopColor="#06b6d4" stopOpacity={0} />
+                      <stop offset="5%" stopColor="#ec4899" stopOpacity={0.4} />
+                      <stop offset="95%" stopColor="#ec4899" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
@@ -257,8 +257,8 @@ const CareerInsights = () => {
                       return (
                         <div style={{ background: 'rgba(5,5,16,0.95)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: '10px 14px' }}>
                           <p style={{ color: '#94a3b8', fontSize: 11, marginBottom: 4 }}>{label}</p>
-                          <p style={{ color: '#22d3ee', fontWeight: 700, fontSize: 14 }}>{payload[0]?.value} years</p>
-                          {d?.company && <p style={{ color: '#a855f7', fontSize: 11 }}>{d.company}</p>}
+                          <p style={{ color: '#f9a8d4', fontWeight: 700, fontSize: 14 }}>{payload[0]?.value} years</p>
+                          {d?.company && <p style={{ color: '#c084fc', fontSize: 11 }}>{d.company}</p>}
                         </div>
                       );
                     }}
@@ -266,11 +266,11 @@ const CareerInsights = () => {
                   <Area
                     type="monotone"
                     dataKey="experience"
-                    stroke="#06b6d4"
+                    stroke="#ec4899"
                     strokeWidth={2.5}
                     fill="url(#expGrad)"
-                    dot={{ r: 5, fill: '#06b6d4', strokeWidth: 2, stroke: '#0a0a1a' }}
-                    activeDot={{ r: 7, fill: '#22d3ee', strokeWidth: 0 }}
+                    dot={{ r: 5, fill: '#ec4899', strokeWidth: 2, stroke: '#080b14' }}
+                    activeDot={{ r: 7, fill: '#f9a8d4', strokeWidth: 0 }}
                   />
                 </AreaChart>
               </ResponsiveContainer>
@@ -279,9 +279,9 @@ const CareerInsights = () => {
             {/* Company annotations */}
             <div className="flex flex-wrap gap-4 mt-4">
               {[
-                { years: '2020–22', company: 'TCS', color: '#8b5cf6' },
-                { years: '2022–24', company: 'Estee Lauder', color: '#ec4899' },
-                { years: '2024–', company: 'Circana', color: '#06b6d4' },
+                { years: '2020–22', company: 'TCS', color: '#a855f7' },
+                { years: '2022–24', company: 'Estee Lauder', color: '#f472b6' },
+                { years: '2024–', company: 'Circana', color: '#ec4899' },
               ].map(c => (
                 <div key={c.company} className="flex items-center gap-1.5">
                   <div className="w-1 h-4 rounded-full" style={{ background: c.color }} />
@@ -295,11 +295,11 @@ const CareerInsights = () => {
           <div className="flex flex-col gap-4">
             <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider">Key Numbers</p>
             {[
-              { label: 'EMEA Client Portfolio', value: '200+', sub: 'Circana — enterprise clients', color: '#06b6d4' },
-              { label: 'Data Accuracy Maintained', value: '100%', sub: 'TCS — 15+ banking releases', color: '#a855f7' },
-              { label: 'Recurring Error Reduction', value: '25%', sub: 'Circana — P&L deep dives', color: '#ec4899' },
-              { label: 'Procurement Cost Cut', value: '15%', sub: 'Estee Lauder — vendor negotiations', color: '#8b5cf6' },
-              { label: 'Conversion Uplift', value: '20%+', sub: 'Estee Lauder — sales funnel', color: '#6366f1' },
+              { label: 'Customer Portfolio', value: '200+', sub: 'Circana — primary point of contact', color: '#ec4899' },
+              { label: 'Queries Resolved / Week', value: '80+', sub: 'Circana — within SLA', color: '#f9a8d4' },
+              { label: 'On-time Delivery', value: '100%', sub: 'Circana — KPI reporting', color: '#c084fc' },
+              { label: 'Recurring Error Reduction', value: '25%', sub: 'Circana — process improvement', color: '#f472b6' },
+              { label: 'Conversion Uplift', value: '20%+', sub: 'Estee Lauder — B2C operations', color: '#a855f7' },
             ].map((stat, i) => (
               <div
                 key={i}

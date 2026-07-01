@@ -176,7 +176,7 @@ const Education = () => {
   const { ref: headerRef, visible: headerVisible } = useVisible(0.1);
 
   return (
-    <section id="education" className="section bg-[#050510]">
+    <section id="education" className="section bg-[#06080e]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -208,19 +208,19 @@ const Education = () => {
             >
               <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider mb-4">Education Timeline</p>
               <div className="relative flex items-center">
-                <div className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 via-indigo-500 to-cyan-500 rounded-full" />
+                <div className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-nav-500 via-nav-500 to-gold-500 rounded-full" />
                 {[
-                  { year: '2016', label: 'BEng Starts', color: '#a855f7' },
-                  { year: '2020', label: 'BEng Complete', color: '#8b5cf6' },
-                  { year: '2022', label: 'MSc Starts', color: '#6366f1' },
-                  { year: '2023', label: 'MSc Complete', color: '#06b6d4' },
+                  { year: '2016', label: 'BEng Starts', color: '#c084fc' },
+                  { year: '2020', label: 'BEng Complete', color: '#a855f7' },
+                  { year: '2022', label: 'MSc Starts', color: '#7c3aed' },
+                  { year: '2023', label: 'MSc Complete', color: '#ec4899' },
                 ].map((point, i, arr) => (
                   <div
                     key={i}
                     className="relative flex flex-col items-center flex-1"
                   >
                     <div
-                      className="w-3 h-3 rounded-full border-2 border-[#050510] z-10 mb-3"
+                      className="w-3 h-3 rounded-full border-2 border-[#06080e] z-10 mb-3"
                       style={{ background: point.color, boxShadow: `0 0 8px ${point.color}` }}
                     />
                     <span className="text-[11px] font-bold" style={{ color: point.color }}>{point.year}</span>
@@ -245,7 +245,7 @@ const Education = () => {
 
             {/* Certifications */}
             <h3 className="text-lg font-bold text-white mt-8 mb-5 flex items-center gap-2">
-              <span className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border border-emerald-500/20 flex items-center justify-center text-sm">📜</span>
+              <span className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500/20 to-gold-500/20 border border-emerald-500/20 flex items-center justify-center text-sm">📜</span>
               Certifications
             </h3>
             <div className="flex flex-col gap-3">
@@ -274,10 +274,10 @@ const Education = () => {
             >
               <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider mb-4">Academic Highlights</p>
               {[
-                { label: 'Undergraduate CGPA', value: '8.2 / 10', color: '#a855f7' },
-                { label: 'Classification', value: 'First Class', color: '#8b5cf6' },
-                { label: 'Postgraduate Degree', value: 'MSc', color: '#06b6d4' },
-                { label: 'Specialisation', value: 'Statistical Modelling', color: '#6366f1' },
+                { label: 'Undergraduate CGPA', value: '8.2 / 10', color: '#c084fc' },
+                { label: 'Classification', value: 'First Class', color: '#a855f7' },
+                { label: 'Postgraduate Degree', value: 'MSc', color: '#ec4899' },
+                { label: 'Specialisation', value: 'Statistical Modelling', color: '#7c3aed' },
               ].map((item, i) => (
                 <div key={i} className="flex justify-between items-center py-2 border-b border-white/[0.05] last:border-0">
                   <span className="text-[12px] text-gray-400">{item.label}</span>
