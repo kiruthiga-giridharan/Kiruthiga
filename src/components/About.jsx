@@ -20,17 +20,17 @@ const timelineEvents = [
     title: 'Bachelor of Engineering',
     subtitle: 'Anna University · Chennai, India',
     detail: 'CGPA 8.2/10 · First Class · Best Outgoing Student 2020',
-    color: '#a855f7',
+    color: '#4f46e5',
     icon: '🎓',
     delay: 0,
   },
   {
     year: '2020 – 2022',
     type: 'work',
-    title: 'Data & Systems Analyst',
+    title: 'System Analyst — Financial Services',
     subtitle: 'Tata Consultancy Services · Chennai, India',
-    detail: '100+ SQL queries · 100% data accuracy · 15+ banking releases · Top Performer FY2021',
-    color: '#8b5cf6',
+    detail: 'SQL reporting for Nationwide banking & insurance · 100% data accuracy · Power BI heatmaps · Top Performer FY2021',
+    color: '#a5b4fc',
     icon: '💼',
     delay: 150,
   },
@@ -40,27 +40,27 @@ const timelineEvents = [
     title: 'MSc in Management',
     subtitle: 'Trinity College Dublin · Dublin, Ireland',
     detail: 'Statistical Modelling, Enterprise Risk & Analytics · Research on Data-Driven Decision Frameworks',
-    color: '#06b6d4',
+    color: '#0ea5e9',
     icon: '🎓',
     delay: 300,
   },
   {
     year: '2022 – 2024',
     type: 'work',
-    title: 'Business & Data Analyst',
+    title: 'Business Consultant',
     subtitle: 'Estee Lauder Companies · Dublin, Ireland',
-    detail: '20%+ conversion uplift · 30% faster reporting · EUR 120K cost savings · 8 retail locations',
-    color: '#ec4899',
+    detail: '20%+ conversion uplift · 15% procurement cost cut · Power BI & process redesign',
+    color: '#34d399',
     icon: '💼',
     delay: 450,
   },
   {
     year: '2024 – Present',
     type: 'work',
-    title: 'Data Analyst',
+    title: 'Data & Operations Analyst',
     subtitle: 'Circana Market Research · Dublin, Ireland',
-    detail: '200+ enterprise accounts · $10M+ EMEA portfolio · 100% on-time delivery · 25% fewer data issues',
-    color: '#06b6d4',
+    detail: '200+ enterprise accounts · €10M+ EMEA portfolio · SQL + Azure Pipeline · 100% SLA compliance',
+    color: '#0ea5e9',
     icon: '🚀',
     delay: 600,
   },
@@ -138,7 +138,7 @@ const About = () => {
   const { ref: headerRef, visible: headerVisible } = useVisible();
 
   return (
-    <section id="about" className="section bg-[#070714]">
+    <section id="about" className="section bg-[#040f1e]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -160,7 +160,7 @@ const About = () => {
           {/* Timeline */}
           <div>
             <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-purple-500/20 border border-white/10 flex items-center justify-center text-sm">📅</span>
+              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-gold-500/20 to-nav-500/20 border border-white/10 flex items-center justify-center text-sm">📅</span>
               Career Timeline
             </h3>
             {timelineEvents.map((event, i) => (
@@ -183,10 +183,10 @@ const About = () => {
                 {[
                   { label: 'Location', value: 'Dublin, Ireland', icon: '📍' },
                   { label: 'Work Rights', value: 'Authorised in Ireland', icon: '✅' },
-                  { label: 'Experience', value: '5+ Years', icon: '📊' },
+                  { label: 'Experience', value: '4.5+ Years', icon: '📊' },
                   { label: 'Education', value: 'MSc + BEng', icon: '🎓' },
                   { label: 'Companies', value: '3 Major Firms', icon: '🏢' },
-                  { label: 'Specialisation', value: 'Data & BI', icon: '🔍' },
+                  { label: 'Specialisation', value: 'Data & Ops Analytics', icon: '🔍' },
                 ].map((fact, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
                     <span className="text-base mt-0.5">{fact.icon}</span>

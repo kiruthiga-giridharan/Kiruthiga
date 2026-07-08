@@ -6,6 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        gold: {
+          300: '#bae6fd',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+        },
+        nav: {
+          400: '#a5b4fc',
+          500: '#818cf8',
+          600: '#6366f1',
+          700: '#4f46e5',
+        },
+      },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { education, awards } from '../data/resumeData';
+import { education, awards, certifications } from '../data/resumeData';
 
 const useVisible = (threshold = 0.1) => {
   const ref = useRef(null);
@@ -176,7 +176,7 @@ const Education = () => {
   const { ref: headerRef, visible: headerVisible } = useVisible(0.1);
 
   return (
-    <section id="education" className="section bg-[#050510]">
+    <section id="education" className="section bg-[#030d1a]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -189,7 +189,7 @@ const Education = () => {
             Education &amp; <span className="gradient-text">Awards</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Academic foundations in statistical modelling, risk analytics, and engineering — complementing 5+ years of practical data expertise
+            Academic foundations in statistical modelling, risk analytics, and engineering — complementing 4.5+ years of practical data and operations expertise
           </p>
         </div>
 
@@ -208,19 +208,19 @@ const Education = () => {
             >
               <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider mb-4">Education Timeline</p>
               <div className="relative flex items-center">
-                <div className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 via-indigo-500 to-cyan-500 rounded-full" />
+                <div className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-nav-500 via-nav-600 to-gold-500 rounded-full" />
                 {[
-                  { year: '2016', label: 'BEng Starts', color: '#a855f7' },
-                  { year: '2020', label: 'BEng Complete', color: '#8b5cf6' },
-                  { year: '2022', label: 'MSc Starts', color: '#6366f1' },
-                  { year: '2023', label: 'MSc Complete', color: '#06b6d4' },
+                  { year: '2016', label: 'BEng Starts', color: '#4f46e5' },
+                  { year: '2020', label: 'BEng Complete', color: '#a5b4fc' },
+                  { year: '2022', label: 'MSc Starts', color: '#4f46e5' },
+                  { year: '2023', label: 'MSc Complete', color: '#0ea5e9' },
                 ].map((point, i, arr) => (
                   <div
                     key={i}
                     className="relative flex flex-col items-center flex-1"
                   >
                     <div
-                      className="w-3 h-3 rounded-full border-2 border-[#050510] z-10 mb-3"
+                      className="w-3 h-3 rounded-full border-2 border-[#030d1a] z-10 mb-3"
                       style={{ background: point.color, boxShadow: `0 0 8px ${point.color}` }}
                     />
                     <span className="text-[11px] font-bold" style={{ color: point.color }}>{point.year}</span>
@@ -243,6 +243,24 @@ const Education = () => {
               ))}
             </div>
 
+            {/* Certifications */}
+            <h3 className="text-lg font-bold text-white mt-8 mb-4 flex items-center gap-2">
+              <span className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500/20 to-gold-500/20 border border-emerald-500/20 flex items-center justify-center text-sm">📜</span>
+              Certifications
+            </h3>
+            <div className="flex flex-col gap-3 mb-6">
+              {certifications.map((cert, i) => (
+                <div key={i} className="rounded-xl p-4 border border-white/[0.08]" style={{ background: 'rgba(255,255,255,0.03)' }}>
+                  <p className="text-sm font-semibold text-white">{cert.title}</p>
+                  <p className="text-xs text-gray-500 mt-1">{cert.organization}</p>
+                  <span className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-[11px] font-semibold"
+                    style={{ color: cert.color, background: `${cert.color}15`, border: `1px solid ${cert.color}30` }}>
+                    {cert.status}
+                  </span>
+                </div>
+              ))}
+            </div>
+
             {/* Academic stats */}
             <div
               className="mt-6 rounded-2xl p-5 border border-white/[0.08]"
@@ -250,10 +268,10 @@ const Education = () => {
             >
               <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider mb-4">Academic Highlights</p>
               {[
-                { label: 'Undergraduate CGPA', value: '8.2 / 10', color: '#a855f7' },
-                { label: 'Classification', value: 'First Class', color: '#8b5cf6' },
-                { label: 'Postgraduate Degree', value: 'MSc', color: '#06b6d4' },
-                { label: 'Specialisation', value: 'Statistical Modelling', color: '#6366f1' },
+                { label: 'Undergraduate CGPA', value: '8.2 / 10', color: '#4f46e5' },
+                { label: 'Classification', value: 'First Class', color: '#a5b4fc' },
+                { label: 'Postgraduate Degree', value: 'MSc', color: '#0ea5e9' },
+                { label: 'Specialisation', value: 'Statistical Modelling', color: '#4f46e5' },
               ].map((item, i) => (
                 <div key={i} className="flex justify-between items-center py-2 border-b border-white/[0.05] last:border-0">
                   <span className="text-[12px] text-gray-400">{item.label}</span>

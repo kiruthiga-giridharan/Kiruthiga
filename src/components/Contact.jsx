@@ -40,10 +40,10 @@ const ContactCard = ({ icon, label, value, href, color, delay, visible }) => (
     </div>
     <div className="flex-1 min-w-0">
       <p className="text-[11px] text-gray-500 font-medium uppercase tracking-wider mb-0.5">{label}</p>
-      <p className="text-sm font-semibold text-white truncate group-hover:text-cyan-400 transition-colors">{value}</p>
+      <p className="text-sm font-semibold text-white truncate group-hover:text-gold-400 transition-colors">{value}</p>
     </div>
     <svg
-      className="w-4 h-4 text-gray-600 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"
+      className="w-4 h-4 text-gray-600 group-hover:text-gold-400 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"
       fill="none" stroke="currentColor" viewBox="0 0 24 24"
     >
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -61,21 +61,21 @@ const Contact = () => {
       label: 'Email',
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
-      color: '#06b6d4',
+      color: '#0ea5e9',
     },
     {
       icon: '📞',
       label: 'Phone',
       value: personalInfo.phone,
       href: `tel:${personalInfo.phone.replace(/\s/g, '')}`,
-      color: '#a855f7',
+      color: '#4f46e5',
     },
     {
       icon: '📍',
       label: 'Location',
       value: personalInfo.location,
       href: '#',
-      color: '#6366f1',
+      color: '#4f46e5',
     },
     {
       icon: '💼',
@@ -87,11 +87,11 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section bg-[#070714] relative overflow-hidden">
+    <section id="contact" className="section bg-[#040f1e] relative overflow-hidden">
       {/* Background decoration */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] opacity-10 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at center, rgba(6,182,212,0.6) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(ellipse at center, rgba(14,165,233,0.6) 0%, transparent 70%)' }}
       />
 
       <div className="max-w-5xl mx-auto px-4 relative z-10">
@@ -106,10 +106,10 @@ const Contact = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
-            Open to Data Analyst, Business Analyst, and Operations Analyst opportunities in Dublin, Ireland.
+            Open to Data & Operations Analyst and SQL Reporting roles opportunities in Dublin, Ireland.
             <br />
-            <span className="inline-flex items-center gap-1.5 mt-2 text-cyan-400/80">
-              <span className="w-2 h-2 rounded-full bg-cyan-400" />
+            <span className="inline-flex items-center gap-1.5 mt-2 text-gold-400/80">
+              <span className="w-2 h-2 rounded-full bg-gold-400" />
               {personalInfo.authorisedToWork}
             </span>
           </p>
@@ -131,23 +131,24 @@ const Contact = () => {
 
             {/* Download resume button */}
             <div
-              className="mt-2 p-5 rounded-2xl border border-dashed border-cyan-500/25 flex flex-col items-center gap-3 transition-all duration-300 hover:border-cyan-500/50 hover:bg-cyan-500/5"
-              style={{ background: 'rgba(6,182,212,0.04)' }}
+              className="mt-2 p-5 rounded-2xl border border-dashed border-gold-500/25 flex flex-col items-center gap-3 transition-all duration-300 hover:border-gold-500/50 hover:bg-gold-500/5"
+              style={{ background: 'rgba(14,165,233,0.04)' }}
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center text-2xl">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500 to-nav-600 flex items-center justify-center text-2xl">
                 📄
               </div>
               <div className="text-center">
                 <p className="text-sm font-semibold text-white mb-0.5">Download Resume</p>
-                <p className="text-xs text-gray-500">Kiruthiga Giridharan · Data Analyst</p>
+                <p className="text-xs text-gray-500">Kiruthiga Giridharan · Data & Operations Analyst</p>
               </div>
-              <button
-                className="px-6 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:scale-105 active:scale-95"
-                style={{ background: 'linear-gradient(135deg, #06b6d4, #a855f7)', boxShadow: '0 4px 20px rgba(6,182,212,0.25)' }}
-                onClick={() => window.print()}
+              <a
+                href="/resume.pdf"
+                download="Kiruthiga_Giridharan_Resume.pdf"
+                className="px-6 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:scale-105 active:scale-95 inline-block"
+                style={{ background: 'linear-gradient(135deg, #0ea5e9, #4f46e5)', boxShadow: '0 4px 20px rgba(14,165,233,0.25)' }}
               >
                 Download PDF
-              </button>
+              </a>
             </div>
           </div>
 
@@ -164,14 +165,14 @@ const Contact = () => {
                 <div
                   className="w-24 h-24 rounded-2xl flex items-center justify-center text-4xl font-black text-white"
                   style={{
-                    background: 'linear-gradient(135deg, #06b6d4, #a855f7)',
-                    boxShadow: '0 0 40px rgba(6,182,212,0.3)',
+                    background: 'linear-gradient(135deg, #0ea5e9, #4f46e5)',
+                    boxShadow: '0 0 40px rgba(14,165,233,0.3)',
                   }}
                 >
                   KG
                 </div>
                 <div
-                  className="absolute -bottom-2 -right-2 w-7 h-7 rounded-full border-2 border-[#070714] flex items-center justify-center"
+                  className="absolute -bottom-2 -right-2 w-7 h-7 rounded-full border-2 border-[#040f1e] flex items-center justify-center"
                   style={{ background: '#10b981' }}
                 >
                   <span className="text-[10px]">✓</span>
@@ -179,7 +180,7 @@ const Contact = () => {
               </div>
 
               <h3 className="text-2xl font-black text-white mb-1">{personalInfo.name}</h3>
-              <p className="text-cyan-400 font-semibold mb-2">{personalInfo.title}</p>
+              <p className="text-gold-400 font-semibold mb-2">{personalInfo.title}</p>
               <p className="text-gray-400 text-sm mb-6">{personalInfo.subtitle}</p>
 
               {/* Tags */}
@@ -187,8 +188,8 @@ const Contact = () => {
                 {['Python', 'SQL', 'Power BI', 'Tableau', 'Data Analysis'].map(tag => (
                   <span
                     key={tag}
-                    className="px-3 py-1 rounded-full text-xs font-semibold text-cyan-400 border"
-                    style={{ background: 'rgba(6,182,212,0.1)', borderColor: 'rgba(6,182,212,0.25)' }}
+                    className="px-3 py-1 rounded-full text-xs font-semibold text-gold-400 border"
+                    style={{ background: 'rgba(14,165,233,0.1)', borderColor: 'rgba(14,165,233,0.25)' }}
                   >
                     {tag}
                   </span>
@@ -213,11 +214,11 @@ const Contact = () => {
               <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">At a Glance</h4>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: 'Experience', value: '5+ Years', color: '#06b6d4' },
-                  { label: 'Current Role', value: 'Data Analyst', color: '#a855f7' },
-                  { label: 'Location', value: 'Dublin 🇮🇪', color: '#6366f1' },
-                  { label: 'Education', value: 'MSc · BEng', color: '#8b5cf6' },
-                  { label: 'Key Tools', value: 'Python · SQL', color: '#ec4899' },
+                  { label: 'Experience', value: '4.5+ Years', color: '#0ea5e9' },
+                  { label: 'Current Role', value: 'Data & Ops Analyst', color: '#4f46e5' },
+                  { label: 'Location', value: 'Dublin 🇮🇪', color: '#4f46e5' },
+                  { label: 'Education', value: 'MSc · BEng', color: '#a5b4fc' },
+                  { label: 'Key Tools', value: 'SQL · Azure · Power BI', color: '#34d399' },
                   { label: 'Work Rights', value: 'Authorised ✓', color: '#10b981' },
                 ].map((item, i) => (
                   <div key={i} className="p-3 rounded-xl border border-white/[0.06] bg-white/[0.02]">
@@ -234,14 +235,14 @@ const Contact = () => {
         <div className="mt-20 pt-8 border-t border-white/[0.06] text-center">
           <p className="text-gray-600 text-sm">
             Built with{' '}
-            <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #06b6d4, #a855f7)' }}>
+            <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #0ea5e9, #4f46e5)' }}>
               React + Tailwind CSS
             </span>
             {' '}· Portfolio of{' '}
             <span className="text-white font-semibold">Kiruthiga Giridharan</span>
           </p>
           <p className="text-gray-700 text-xs mt-1">
-            Data Analyst · Dublin, Ireland · {new Date().getFullYear()}
+            Data & Operations Analyst · Dublin, Ireland · {new Date().getFullYear()}
           </p>
         </div>
       </div>

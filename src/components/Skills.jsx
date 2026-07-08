@@ -110,7 +110,7 @@ const Skills = () => {
   const [activeCategory, setActiveCategory] = useState(0);
 
   return (
-    <section id="skills" className="section bg-[#050510]">
+    <section id="skills" className="section bg-[#030d1a]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -137,7 +137,7 @@ const Skills = () => {
             style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(20px)' }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-cyan-400 to-purple-500" />
+              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-gold-400 to-nav-500" />
               <h3 className="text-lg font-bold text-white">Competency Radar</h3>
               <span className="ml-auto text-[11px] text-gray-500 border border-white/10 px-2 py-0.5 rounded-full">8 Domains</span>
             </div>
@@ -156,11 +156,11 @@ const Skills = () => {
                   <Radar
                     name="Skill Level"
                     dataKey="value"
-                    stroke="#06b6d4"
-                    fill="#06b6d4"
+                    stroke="#0ea5e9"
+                    fill="#0ea5e9"
                     fillOpacity={0.18}
                     strokeWidth={2.5}
-                    dot={{ r: 4, fill: '#06b6d4', strokeWidth: 0 }}
+                    dot={{ r: 4, fill: '#0ea5e9', strokeWidth: 0 }}
                   />
                 </RadarChart>
               </ResponsiveContainer>
@@ -169,11 +169,11 @@ const Skills = () => {
             {/* Legend */}
             <div className="flex items-center justify-center gap-4 mt-2">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-cyan-400" />
+                <div className="w-3 h-3 rounded-full bg-gold-400" />
                 <span className="text-xs text-gray-400">Proficiency Level</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-0.5 bg-cyan-400/40" />
+                <div className="w-6 h-0.5 bg-gold-400/40" />
                 <span className="text-xs text-gray-400">Domain Boundary</span>
               </div>
             </div>
@@ -186,7 +186,7 @@ const Skills = () => {
             style={{ background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(20px)' }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-purple-400 to-cyan-500" />
+              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-nav-400 to-gold-500" />
               <h3 className="text-lg font-bold text-white">Core Proficiencies</h3>
               <span className="ml-auto text-[11px] text-gray-500 border border-white/10 px-2 py-0.5 rounded-full">Top 6</span>
             </div>
@@ -214,7 +214,7 @@ const Skills = () => {
         >
           <div className="p-6 border-b border-white/[0.06]">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-indigo-400 to-pink-500" />
+              <div className="w-2 h-6 rounded-full bg-gradient-to-b from-nav-500 to-nav-600" />
               <h3 className="text-lg font-bold text-white">Skill Breakdown by Category</h3>
             </div>
 
